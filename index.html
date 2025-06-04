@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 
+
+
     <link rel="stylesheet" href="./src/styles/styles.min.css">
 
     <title>Landing</title>
@@ -25,7 +27,8 @@
         
 
     
-    <nav class="main-nav container ">
+    
+    <nav class="main-nav container desktop-nav">
         <ul class="main-nav__items">
             <li><a href="#">About</a></li>
             <li><a href="#">Features</a></li>
@@ -34,13 +37,28 @@
             <li><a href="#">Help</a></li>
         </ul>
     </nav>
+ 
         <ul class="auth-area container ">
             <li><a href="#" class="auth-area__si-link" rel="nofollow">Sign in</a></li>
             <li><a class="btn__signup" href="#">Sign up</a></li>
         </ul>
+
+       
+
+    <div class="menu">
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+        <li><a href="#" class="menu-item">About</a><li>
+        <li><a href="#" class="menu-item">Features</a><li>
+        <li><a href="#" class="menu-item">Pricing</a><li>
+        <li><a href="#" class="menu-item">Testimonials</a><li>
+        <li><a href="#" class="menu-item">Help</a></li>
+        <li><a href="#" class="menu-item">Sign in</a></li>
+        <li><a href="#" class="menu-item">Sign up</a></li>
+    </ul>
+</div>
     </header>
-
-
 
 
 
@@ -62,7 +80,7 @@
 
         <div class="wrapper__stats container">
             <div class="stats__box">
-                <div class="stats__shade-box"></div>
+                <!-- <div class="stats__shade-box"></div> -->
             <div class="stats">
                 <div class="stats__item">
                     <div class="stats__icon sm-user"></div>
@@ -92,7 +110,7 @@
             </div>
         </div>
         <section class="box-features container" id="features">
-            <img class="box-features__sketch" src="./assets/svg/features.min.svg" alt="A Person Pointing Out">
+            <div class="box-features__sketch"><img class="box-features__sketch" src="./assets/svg/features.min.svg" alt="A Person Pointing Out"></div>
             <div class="box-features__text-area">
                 <h2 class="box-features__title">We Provide Many Features You Can Use</h2>
                 <p class="box-features__description">You can explore the features that we provide with fun and have their own functions each feature.</p>
@@ -376,6 +394,6 @@
             </ul>
     </div>
 </footer>
-
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
